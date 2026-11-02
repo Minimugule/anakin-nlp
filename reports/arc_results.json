@@ -1,0 +1,839 @@
+{
+  "model_comparison": {
+    "tfidf_grouped_auc_by_seed": {
+      "42": 0.6824411521784018,
+      "43": 0.5535586651630426,
+      "44": 0.49674391270509377,
+      "45": 0.5560861036547594,
+      "46": 0.6227257024412713
+    },
+    "same_folds": {
+      "tfidf": 0.6824411521784018,
+      "distilbert": 0.6918282135993264
+    },
+    "same_folds_without_palpatine": {
+      "tfidf": 0.6848806366047746,
+      "distilbert": 0.6046875
+    }
+  },
+  "tusken_massacre": {
+    "event": {
+      "episode": 2,
+      "scene": 125,
+      "heading": "INTERIOR: TATOOINE, HOMESTEAD, GARAGE - DAY"
+    },
+    "measures": {
+      "dark_affect": {
+        "label": "P(anger) + P(fear)",
+        "whole_trilogy": {
+          "index": 352,
+          "before": 0.19101719558238983,
+          "after": 0.2547287046909332,
+          "difference": 0.0637115091085434,
+          "p_value": 0.0014084507042253522,
+          "n_before": 352,
+          "n_after": 358
+        },
+        "episode_2": {
+          "index": 171,
+          "before": 0.18501707911491394,
+          "after": 0.3907945156097412,
+          "difference": 0.20577743649482727,
+          "p_value": 0.009523809523809525,
+          "n_before": 171,
+          "n_after": 39
+        },
+        "blind_break": {
+          "index": 173,
+          "gain": 1.345974240915142,
+          "p_value": 0.14761904761904762,
+          "threshold_95": 1.4859340538796186,
+          "before": 0.18620862066745758,
+          "after": 0.3963463306427002,
+          "scene": 125,
+          "lines_from_event": 2,
+          "event_gain": 1.3447364853567585,
+          "event_gain_rank": 2,
+          "n_splits": 181
+        },
+        "blind_break_by_min_size": {
+          "5": {
+            "scene": 164,
+            "lines_from_event": 27
+          },
+          "10": {
+            "scene": 164,
+            "lines_from_event": 27
+          },
+          "15": {
+            "scene": 125,
+            "lines_from_event": 2
+          },
+          "20": {
+            "scene": 125,
+            "lines_from_event": 2
+          },
+          "30": {
+            "scene": 125,
+            "lines_from_event": 2
+          }
+        },
+        "without_garage": {
+          "blind_scene": 143,
+          "after_mean": 0.3685339093208313
+        },
+        "without_garage_and_gunship": {
+          "after_mean": 0.2863736152648926,
+          "n_after": 23
+        },
+        "levels": {
+          "before_massacre": 0.18501707911491394,
+          "after_massacre_episode_2": 0.3907945156097412,
+          "episode_3_first_half": 0.20396210253238678,
+          "episode_3_second_half": 0.272011935710907
+        }
+      },
+      "anger": {
+        "label": "P(anger)",
+        "whole_trilogy": {
+          "index": 352,
+          "before": 0.10908808559179306,
+          "after": 0.17517349123954773,
+          "difference": 0.06608540564775467,
+          "p_value": 0.0028169014084507044,
+          "n_before": 352,
+          "n_after": 358
+        },
+        "episode_2": {
+          "index": 171,
+          "before": 0.08841820061206818,
+          "after": 0.31782984733581543,
+          "difference": 0.22941164672374725,
+          "p_value": 0.004761904761904762,
+          "n_before": 171,
+          "n_after": 39
+        },
+        "blind_break": {
+          "index": 173,
+          "gain": 1.6785368942299481,
+          "p_value": 0.004761904761904762,
+          "threshold_95": 1.439486683430734,
+          "before": 0.08967721462249756,
+          "after": 0.324343740940094,
+          "scene": 125,
+          "lines_from_event": 2,
+          "event_gain": 1.6713693130730025,
+          "event_gain_rank": 3,
+          "n_splits": 181
+        },
+        "blind_break_by_min_size": {
+          "5": {
+            "scene": 164,
+            "lines_from_event": 27
+          },
+          "10": {
+            "scene": 164,
+            "lines_from_event": 27
+          },
+          "15": {
+            "scene": 125,
+            "lines_from_event": 2
+          },
+          "20": {
+            "scene": 125,
+            "lines_from_event": 2
+          },
+          "30": {
+            "scene": 125,
+            "lines_from_event": 2
+          }
+        },
+        "without_garage": {
+          "blind_scene": 150,
+          "after_mean": 0.28725773096084595
+        },
+        "without_garage_and_gunship": {
+          "after_mean": 0.19472196698188782,
+          "n_after": 23
+        },
+        "levels": {
+          "before_massacre": 0.08841820061206818,
+          "after_massacre_episode_2": 0.31782984733581543,
+          "episode_3_first_half": 0.12971478700637817,
+          "episode_3_second_half": 0.18557558953762054
+        }
+      },
+      "p_dark_bert": {
+        "label": "P(dark side), DistilBERT",
+        "whole_trilogy": {
+          "index": 305,
+          "before": 0.03907175413561893,
+          "after": 0.1496731282582914,
+          "difference": 0.11060137412267247,
+          "p_value": 0.0032,
+          "n_before": 305,
+          "n_after": 320
+        },
+        "episode_2": {
+          "index": 145,
+          "before": 0.058687070765179296,
+          "after": 0.26859083075466894,
+          "difference": 0.20990375998948965,
+          "p_value": 0.03409090909090909,
+          "n_before": 145,
+          "n_after": 31
+        },
+        "blind_break": {
+          "index": 146,
+          "gain": 1.195073630017843,
+          "p_value": 0.07954545454545454,
+          "threshold_95": 1.2715737069332969,
+          "before": 0.058305780749372524,
+          "after": 0.2774432341645782,
+          "scene": 125,
+          "lines_from_event": 1,
+          "event_gain": 1.1252718756674742,
+          "event_gain_rank": 3,
+          "n_splits": 147
+        },
+        "blind_break_by_min_size": {
+          "5": {
+            "scene": 160,
+            "lines_from_event": 19
+          },
+          "10": {
+            "scene": 160,
+            "lines_from_event": 19
+          },
+          "15": {
+            "scene": 125,
+            "lines_from_event": 1
+          },
+          "20": {
+            "scene": 125,
+            "lines_from_event": 1
+          },
+          "30": {
+            "scene": 125,
+            "lines_from_event": 1
+          }
+        },
+        "without_garage": {
+          "blind_scene": 150,
+          "after_mean": 0.25929008544746623
+        },
+        "without_garage_and_gunship": {
+          "after_mean": 0.11791818182203262,
+          "n_after": 17
+        },
+        "levels": {
+          "before_massacre": 0.058687070765179296,
+          "after_massacre_episode_2": 0.26859083075466894,
+          "episode_3_first_half": 0.05728570145341413,
+          "episode_3_second_half": 0.2159996157239095
+        }
+      },
+      "p_dark_tfidf": {
+        "label": "P(dark side), TF-IDF",
+        "whole_trilogy": {
+          "index": 305,
+          "before": 0.259548070389797,
+          "after": 0.3271193368822273,
+          "difference": 0.06757126649243028,
+          "p_value": 0.0016,
+          "n_before": 305,
+          "n_after": 320
+        },
+        "episode_2": {
+          "index": 145,
+          "before": 0.27856840685976286,
+          "after": 0.3385351968950688,
+          "difference": 0.05996679003530592,
+          "p_value": 0.045454545454545456,
+          "n_before": 145,
+          "n_after": 31
+        },
+        "blind_break": {
+          "index": 144,
+          "gain": 0.11529523417223508,
+          "p_value": 0.38636363636363635,
+          "threshold_95": 0.1791240396864619,
+          "before": 0.27706530134099766,
+          "after": 0.3434252095409089,
+          "scene": 118,
+          "lines_from_event": 1,
+          "event_gain": 0.09184142899197223,
+          "event_gain_rank": 8,
+          "n_splits": 147
+        },
+        "blind_break_by_min_size": {
+          "5": {
+            "scene": 118,
+            "lines_from_event": 1
+          },
+          "10": {
+            "scene": 118,
+            "lines_from_event": 1
+          },
+          "15": {
+            "scene": 118,
+            "lines_from_event": 1
+          },
+          "20": {
+            "scene": 118,
+            "lines_from_event": 1
+          },
+          "30": {
+            "scene": 118,
+            "lines_from_event": 1
+          }
+        },
+        "without_garage": {
+          "blind_scene": 34,
+          "after_mean": 0.29830456236039943
+        },
+        "without_garage_and_gunship": {
+          "after_mean": 0.24678980714443313,
+          "n_after": 17
+        },
+        "levels": {
+          "before_massacre": 0.27856840685976286,
+          "after_massacre_episode_2": 0.3385351968950688,
+          "episode_3_first_half": 0.28191830198709833,
+          "episode_3_second_half": 0.36956800836154086
+        }
+      }
+    },
+    "location_uncertainty": {
+      "n_resamples": 2000,
+      "median_scene": 125.0,
+      "interval_90": [
+        20.950000000000003,
+        164.0
+      ],
+      "share_on_event_scene": 0.281,
+      "share_at_or_after_camp": 0.6775,
+      "most_frequent": {
+        "125": 562,
+        "164": 322,
+        "70": 250,
+        "143": 175,
+        "76": 154
+      }
+    },
+    "position": 0.5804695474651242,
+    "controls": {
+      "OBI-WAN": {
+        "dark_affect": {
+          "step": {
+            "index": 156,
+            "before": 0.15598240494728088,
+            "after": 0.17762212455272675,
+            "difference": 0.021639719605445862,
+            "p_value": 0.42328042328042326,
+            "n_before": 156,
+            "n_after": 33
+          },
+          "vs_anakin": {
+            "subject_jump": 0.20577743649482727,
+            "control_jump": 0.021639719605445862,
+            "difference": 0.1841377168893814,
+            "ci_low": -0.012767396494746206,
+            "ci_high": 0.34422071669250714,
+            "excludes_zero": false
+          }
+        },
+        "anger": {
+          "step": {
+            "index": 156,
+            "before": 0.11275724321603775,
+            "after": 0.1322518289089203,
+            "difference": 0.019494585692882538,
+            "p_value": 0.328042328042328,
+            "n_before": 156,
+            "n_after": 33
+          },
+          "vs_anakin": {
+            "subject_jump": 0.22941164672374725,
+            "control_jump": 0.019494585692882538,
+            "difference": 0.20991706103086472,
+            "ci_low": 0.021287847496569156,
+            "ci_high": 0.34033000040799377,
+            "excludes_zero": true
+          }
+        }
+      },
+      "PADME": {
+        "dark_affect": {
+          "step": {
+            "index": 138,
+            "before": 0.22634431719779968,
+            "after": 0.30653077363967896,
+            "difference": 0.08018645644187927,
+            "p_value": 0.09523809523809523,
+            "n_before": 138,
+            "n_after": 30
+          },
+          "vs_anakin": {
+            "subject_jump": 0.20577743649482727,
+            "control_jump": 0.08018645644187927,
+            "difference": 0.125590980052948,
+            "ci_low": -0.058373223245143886,
+            "ci_high": 0.25671116113662695,
+            "excludes_zero": false
+          }
+        },
+        "anger": {
+          "step": {
+            "index": 138,
+            "before": 0.10593685507774353,
+            "after": 0.23870539665222168,
+            "difference": 0.13276854157447815,
+            "p_value": 0.041666666666666664,
+            "n_before": 138,
+            "n_after": 30
+          },
+          "vs_anakin": {
+            "subject_jump": 0.22941164672374725,
+            "control_jump": 0.13276854157447815,
+            "difference": 0.0966431051492691,
+            "ci_low": -0.08527231346815824,
+            "ci_high": 0.24400206506252284,
+            "excludes_zero": false
+          }
+        }
+      }
+    }
+  },
+  "emotions": {
+    "trends": {
+      "anger": {
+        "rho": 0.1183604334033141,
+        "p_value": 0.07042253521126761,
+        "n": 710,
+        "p_holm": 0.2535211267605634,
+        "within_episode": {
+          "1": {
+            "rho": 0.13337792351099773,
+            "p_value": 0.2154696132596685,
+            "n": 181
+          },
+          "2": {
+            "rho": 0.23521027249525395,
+            "p_value": 0.023809523809523808,
+            "n": 210
+          },
+          "3": {
+            "rho": 0.08844367097216344,
+            "p_value": 0.3824451410658307,
+            "n": 319
+          }
+        }
+      },
+      "disgust": {
+        "rho": 0.09371187817626918,
+        "p_value": 0.01267605633802817,
+        "n": 710,
+        "p_holm": 0.06338028169014084,
+        "within_episode": {
+          "1": {
+            "rho": 0.05758204196368189,
+            "p_value": 0.35911602209944754,
+            "n": 181
+          },
+          "2": {
+            "rho": 0.06946982480630433,
+            "p_value": 0.5333333333333333,
+            "n": 210
+          },
+          "3": {
+            "rho": 0.09307341484001481,
+            "p_value": 0.2006269592476489,
+            "n": 319
+          }
+        }
+      },
+      "fear": {
+        "rho": 0.08519550602514203,
+        "p_value": 0.06338028169014084,
+        "n": 710,
+        "p_holm": 0.2535211267605634,
+        "within_episode": {
+          "1": {
+            "rho": 0.03899380678860657,
+            "p_value": 0.580110497237569,
+            "n": 181
+          },
+          "2": {
+            "rho": 0.12411971403270672,
+            "p_value": 0.36666666666666664,
+            "n": 210
+          },
+          "3": {
+            "rho": 0.0953953104990674,
+            "p_value": 0.07523510971786834,
+            "n": 319
+          }
+        }
+      },
+      "joy": {
+        "rho": -0.16855139949009681,
+        "p_value": 0.005633802816901409,
+        "n": 710,
+        "p_holm": 0.03943661971830986,
+        "within_episode": {
+          "1": {
+            "rho": -0.07808677781494625,
+            "p_value": 0.3370165745856354,
+            "n": 181
+          },
+          "2": {
+            "rho": -0.03902267727452538,
+            "p_value": 0.6476190476190476,
+            "n": 210
+          },
+          "3": {
+            "rho": -0.18821827408784705,
+            "p_value": 0.10658307210031348,
+            "n": 319
+          }
+        }
+      },
+      "neutral": {
+        "rho": 0.06277065976219019,
+        "p_value": 0.4971830985915493,
+        "n": 710,
+        "p_holm": 0.9943661971830986,
+        "within_episode": {
+          "1": {
+            "rho": -0.11576311687366996,
+            "p_value": 0.016574585635359115,
+            "n": 181
+          },
+          "2": {
+            "rho": -0.07811921450603725,
+            "p_value": 0.5142857142857142,
+            "n": 210
+          },
+          "3": {
+            "rho": -0.1219782617556302,
+            "p_value": 0.09090909090909091,
+            "n": 319
+          }
+        }
+      },
+      "sadness": {
+        "rho": -0.03421703502085406,
+        "p_value": 0.5845070422535211,
+        "n": 710,
+        "p_holm": 0.9943661971830986,
+        "within_episode": {
+          "1": {
+            "rho": 0.06428675869041292,
+            "p_value": 0.5524861878453039,
+            "n": 181
+          },
+          "2": {
+            "rho": -0.012026215101606178,
+            "p_value": 0.8904761904761904,
+            "n": 210
+          },
+          "3": {
+            "rho": 0.071436644751757,
+            "p_value": 0.3166144200626959,
+            "n": 319
+          }
+        }
+      },
+      "surprise": {
+        "rho": -0.23361094658659592,
+        "p_value": 0.008450704225352112,
+        "n": 710,
+        "p_holm": 0.05070422535211267,
+        "within_episode": {
+          "1": {
+            "rho": -0.10071443785768082,
+            "p_value": 0.3370165745856354,
+            "n": 181
+          },
+          "2": {
+            "rho": -0.05204276232365143,
+            "p_value": 0.5666666666666667,
+            "n": 210
+          },
+          "3": {
+            "rho": -0.17721616318118844,
+            "p_value": 0.0438871473354232,
+            "n": 319
+          }
+        }
+      }
+    },
+    "question_marks": {
+      "surprise_with": 0.3988172113895416,
+      "surprise_without": 0.09738002717494965,
+      "share_by_episode": {
+        "1": 0.2541436464088398,
+        "2": 0.13333333333333333,
+        "3": 0.19435736677115986
+      },
+      "surprise_trend_without_questions": {
+        "rho": -0.2687586965304957,
+        "p_value": 0.010452961672473868,
+        "n": 574
+      }
+    }
+  },
+  "dark_affect": {
+    "measure": "P(anger) + P(fear)",
+    "trend": {
+      "rho": 0.1293144229557654,
+      "p_value": 0.005633802816901409,
+      "n": 710
+    },
+    "best_break_by_min_size": {
+      "15": {
+        "index": 687,
+        "gain": 2.066547499071021,
+        "p_value": 0.01971830985915493,
+        "threshold_95": 1.4184149670875599,
+        "before": 0.21327078342437744,
+        "after": 0.5179952383041382,
+        "episode": 3,
+        "scene": 195,
+        "position": 0.9629125552909152,
+        "heading": "195 EXT. MUSTAFAR-LANDING PLATFORM-DAY"
+      },
+      "30": {
+        "index": 680,
+        "gain": 1.650611032135103,
+        "p_value": 0.004225352112676056,
+        "threshold_95": 1.2154512706591223,
+        "before": 0.21301473677158356,
+        "after": 0.45269665122032166,
+        "episode": 3,
+        "scene": 195,
+        "position": 0.9581490302824089,
+        "heading": "195 EXT. MUSTAFAR-LANDING PLATFORM-DAY"
+      },
+      "50": {
+        "index": 312,
+        "gain": 0.8219961341958353,
+        "p_value": 0.07323943661971831,
+        "threshold_95": 0.8495587665670116,
+        "before": 0.18471212685108185,
+        "after": 0.25326821208000183,
+        "episode": 2,
+        "scene": 70,
+        "position": 0.5103776794828173,
+        "heading": "EXTERIOR: NABOO, MOUNTAIN MEADOW - LATE AFTERNOON"
+      }
+    },
+    "pooled_light_control": {
+      "n_lines": 1670,
+      "n_characters": 19,
+      "contrast": {
+        "subject_slope": 0.12012545610863808,
+        "control_slope": 0.016898826990846657,
+        "difference": 0.10322662911779142,
+        "ci_low": -0.009104271062749782,
+        "ci_high": 0.21316193563964567,
+        "excludes_zero": false
+      }
+    },
+    "controls": {
+      "OBI-WAN": {
+        "subject_slope": 0.12012545610863808,
+        "control_slope": 0.042903101656175,
+        "difference": 0.07722235445246307,
+        "ci_low": -0.07171034728377117,
+        "ci_high": 0.21573098967460036,
+        "excludes_zero": false
+      },
+      "PADME": {
+        "subject_slope": 0.12012545610863808,
+        "control_slope": 0.009221219650258107,
+        "difference": 0.11090423645837996,
+        "ci_low": -0.03136033498779592,
+        "ci_high": 0.25750188215029907,
+        "excludes_zero": false
+      },
+      "PALPATINE": {
+        "subject_slope": 0.12012545610863808,
+        "control_slope": 0.20319337674381807,
+        "difference": -0.08306792063518,
+        "ci_low": -0.27848895230667914,
+        "ci_high": 0.12292125170369263,
+        "excludes_zero": false
+      }
+    }
+  },
+  "p_dark_tfidf": {
+    "measure": "P(dark side), TF-IDF",
+    "trend": {
+      "rho": 0.21117221363036368,
+      "p_value": 0.0112,
+      "n": 625
+    },
+    "best_break_by_min_size": {
+      "15": {
+        "index": 547,
+        "gain": 1.612299776141306,
+        "p_value": 0.0016,
+        "threshold_95": 1.4340874997075115,
+        "before": 0.2749650921673734,
+        "after": 0.42864671609804506,
+        "episode": 3,
+        "scene": 103,
+        "position": 0.8584552568900987,
+        "heading": "103 INT. CORUSCANT-PADME'S APARTMENT-LANDING ROOM-DAY"
+      },
+      "30": {
+        "index": 547,
+        "gain": 1.612299776141306,
+        "p_value": 0.0016,
+        "threshold_95": 1.4340874997075115,
+        "before": 0.2749650921673734,
+        "after": 0.42864671609804506,
+        "episode": 3,
+        "scene": 103,
+        "position": 0.8584552568900987,
+        "heading": "103 INT. CORUSCANT-PADME'S APARTMENT-LANDING ROOM-DAY"
+      },
+      "50": {
+        "index": 547,
+        "gain": 1.612299776141306,
+        "p_value": 0.0016,
+        "threshold_95": 1.4340874997075115,
+        "before": 0.2749650921673734,
+        "after": 0.42864671609804506,
+        "episode": 3,
+        "scene": 103,
+        "position": 0.8584552568900987,
+        "heading": "103 INT. CORUSCANT-PADME'S APARTMENT-LANDING ROOM-DAY"
+      }
+    },
+    "pooled_light_control": {
+      "n_lines": 1508,
+      "n_characters": 19,
+      "contrast": {
+        "subject_slope": 0.16674843097057238,
+        "control_slope": 0.02367171324931678,
+        "difference": 0.1430767177212556,
+        "ci_low": 0.06712370949108927,
+        "ci_high": 0.22482084551667525,
+        "excludes_zero": true
+      }
+    },
+    "controls": {
+      "OBI-WAN": {
+        "subject_slope": 0.16674843097057238,
+        "control_slope": 0.048079421452516244,
+        "difference": 0.11866900951805613,
+        "ci_low": 0.025635827134145826,
+        "ci_high": 0.21132639657367328,
+        "excludes_zero": true
+      },
+      "PADME": {
+        "subject_slope": 0.16674843097057238,
+        "control_slope": -0.18963748286367804,
+        "difference": 0.35638591383425045,
+        "ci_low": 0.2461425437049349,
+        "ci_high": 0.46635792668819714,
+        "excludes_zero": true
+      },
+      "PALPATINE": {
+        "subject_slope": 0.16674843097057238,
+        "control_slope": -0.22137445683330007,
+        "difference": 0.38812288780387244,
+        "ci_low": 0.2244893769563519,
+        "ci_high": 0.514783404344366,
+        "excludes_zero": true
+      }
+    }
+  },
+  "p_dark_bert": {
+    "measure": "P(dark side), DistilBERT",
+    "trend": {
+      "rho": 0.33314918076848976,
+      "p_value": 0.0016,
+      "n": 625
+    },
+    "best_break_by_min_size": {
+      "15": {
+        "index": 547,
+        "gain": 3.5118437429269562,
+        "p_value": 0.0032,
+        "threshold_95": 3.1197455707581754,
+        "before": 0.06739348045744384,
+        "after": 0.29420579799737495,
+        "episode": 3,
+        "scene": 103,
+        "position": 0.8584552568900987,
+        "heading": "103 INT. CORUSCANT-PADME'S APARTMENT-LANDING ROOM-DAY"
+      },
+      "30": {
+        "index": 547,
+        "gain": 3.5118437429269562,
+        "p_value": 0.0032,
+        "threshold_95": 3.1197455707581754,
+        "before": 0.06739348045744384,
+        "after": 0.29420579799737495,
+        "episode": 3,
+        "scene": 103,
+        "position": 0.8584552568900987,
+        "heading": "103 INT. CORUSCANT-PADME'S APARTMENT-LANDING ROOM-DAY"
+      },
+      "50": {
+        "index": 547,
+        "gain": 3.5118437429269562,
+        "p_value": 0.0032,
+        "threshold_95": 3.1197455707581754,
+        "before": 0.06739348045744384,
+        "after": 0.29420579799737495,
+        "episode": 3,
+        "scene": 103,
+        "position": 0.8584552568900987,
+        "heading": "103 INT. CORUSCANT-PADME'S APARTMENT-LANDING ROOM-DAY"
+      }
+    },
+    "pooled_light_control": {
+      "n_lines": 1508,
+      "n_characters": 19,
+      "contrast": {
+        "subject_slope": 0.2501807337881852,
+        "control_slope": 0.14882171105397896,
+        "difference": 0.10135902273420622,
+        "ci_low": -0.017141359473338908,
+        "ci_high": 0.21973670162577003,
+        "excludes_zero": false
+      }
+    },
+    "controls": {
+      "OBI-WAN": {
+        "subject_slope": 0.2501807337881852,
+        "control_slope": -0.0388351737809443,
+        "difference": 0.2890159075691295,
+        "ci_low": 0.11129026159163405,
+        "ci_high": 0.4506552899443936,
+        "excludes_zero": true
+      },
+      "PADME": {
+        "subject_slope": 0.2501807337881852,
+        "control_slope": -0.2939492623306882,
+        "difference": 0.5441299961188734,
+        "ci_low": 0.33809960414561996,
+        "ci_high": 0.7480330901846264,
+        "excludes_zero": true
+      },
+      "PALPATINE": {
+        "subject_slope": 0.2501807337881852,
+        "control_slope": -0.1779751902003727,
+        "difference": 0.42815592398855784,
+        "ci_low": 0.24244669294292698,
+        "ci_high": 0.5898505724485289,
+        "excludes_zero": true
+      }
+    }
+  }
+}

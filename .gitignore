@@ -1,0 +1,27 @@
+# The screenplays are third-party copyrighted material: the repository ships the
+# scraper (scripts/00_fetch_scripts.py), never the texts or anything derived from
+# them that would let the texts be reconstructed.
+data/raw/
+data/processed/
+Script/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# LaTeX build artefacts (the compiled PDF is kept on purpose)
+docs/*.aux
+docs/*.log
+docs/*.out
+docs/*.toc
+
+# LaTeX build files
+docs/*.aux
+docs/*.log
+docs/*.out
